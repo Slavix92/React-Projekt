@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+.Content {
+  width: 100%;
+  max-with: 1000px;
+}
+
+.Card {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+  padding-top: 15px;
+}
+
+.box1 {
+    width: 30px;
+    float: left;
+}
+.box2 {
+  width: 300px;
+  float: left;
+}

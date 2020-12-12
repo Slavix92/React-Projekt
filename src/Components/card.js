@@ -1,35 +1,38 @@
-import {Header} from header.js;
-const footerMSG = 'Footer komponent';
+import React from 'react';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 
-
-function Card() {
-return (
-    <div className="Card">
-
-    <header className="Card-header">
-    <h1>{headerMSG}</h1>
-    <img src={IMG}></img>
-    </header>
-    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Sed dolor nisl, volutpat et dolor ac, tempor mollis quam. 
-        Maecenas ornare nibh sapien, at semper urna maximus et. 
-        Cras tempor ullamcorper vestibulum. 
-        Nullam ligula nunc, consequat ut nunc in, pellentesque condimentum mi. 
-        Aenean tristique odio eget nisl volutpat, vel feugiat ante malesuada. 
-        Pellentesque tincidunt tempus ex at rutrum. 
-        In non sollicitudin metus. Duis in purus nec est consequat hendrerit. 
-        Nulla velit orci, molestie in hendrerit a, tincidunt non orci. 
-        Mauris nec elementum enim. Quisque vel tellus sapien. 
-        In sagittis non quam eu tristique. 
-        Sed lobortis quis purus ut fringilla.
-      </div>
-        
-    <footer>
-        <h3>{footerMSG}</h3>
-    </footer>
-
-</div>
-)
-};
-
-export default Card;
+export default function Card() {
+  
+  return (
+    <Card >
+      <CardActionArea>
+        <CardMedia
+          image="/static/images/cards/contemplative-reptile.jpg"
+          title="Contemplative Reptile"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Rainbow Six Siege
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+            across all continents except Antarctica
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button size="small" color="primary">
+          Share
+        </Button>
+        <Button size="small" color="primary">
+          Learn More
+        </Button>
+      </CardActions>
+    </Card>
+  );
+}
